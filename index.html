@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carolina Quijada — Amigurumi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">
+      <span class="nav__logo-cq">CQ</span>
+      <span class="nav__logo-text">Carolina Quijada</span>
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#work">Trabajo</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shapes">
+      <div class="shape shape--circle shape--1"></div>
+      <div class="shape shape--circle shape--2"></div>
+      <div class="shape shape--blob shape--3"></div>
+    </div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Hecho a mano con amor y estambre</p>
+        <h1 class="hero__title">
+          Pequeñas criaturas<br />
+          <em>grandes corazones</em>
+        </h1>
+        <p class="hero__desc">
+          Cada amigurumi está tejido a mano, punto a punto —
+          pequeños mundos suaves que esperan ser abrazados.
+        </p>
+        <a href="#work" class="btn btn--primary">Ver la colección</a>
+      </div>
+      <div class="hero__visual">
+        <img src="Assets/landingPage.png" alt="Amigurumis de Carolina Quijada" class="hero__img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-header">
+      <p class="section-label">Colección</p>
+      <h2 class="section-title">Mi Trabajo</h2>
+    </div>
+
+    <div class="work__grid">
+
+      <article class="work-card work-card--wide">
+        <div class="work-card__visual work-card__visual--navidad">
+          <div class="carousel" id="navidadCarousel">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="Assets/Navidad/duende1.jpg"   alt="Duende navideño 1" /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/duende2.jpg"   alt="Duende navideño 2" /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/duendes3.jpg"  alt="Duendes navideños" /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/foca.jpg"      alt="Foca navideña"     /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/gringe.jpg"    alt="Grinch tejido"     /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/nacimiento.jpg" alt="Nacimiento"       /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/navidad1.jpg"  alt="Navidad 1"         /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/navidad2.jpg"  alt="Navidad 2"         /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/santa.jpg"     alt="Santa Claus"       /></div>
+              <div class="carousel__slide"><img src="Assets/Navidad/santa2.jpg"    alt="Santa Claus 2"     /></div>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel__progress-wrap">
+              <div class="carousel__progress-bar" id="navidadProgress"></div>
+            </div>
+          </div>
+          <div class="card-tag">Serie Navidad</div>
+        </div>
+        <div class="work-card__info">
+          <h3>Colección Navideña</h3>
+          <p>Duendes, Santas, Grinch y más — cada pieza teje la magia de la época.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__visual work-card__visual--animalitos">
+          <div class="carousel" id="animalitosCarousel">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="Assets/animalitos/borrego.jpg"  alt="Borrego tejido" /></div>
+              <div class="carousel__slide"><img src="Assets/animalitos/pato.jpg"     alt="Pato tejido"    /></div>
+              <div class="carousel__slide"><img src="Assets/animalitos/foca copy.jpg" alt="Foca tejida"   /></div>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel__dots">
+              <span class="carousel__dot active" data-index="0"></span>
+              <span class="carousel__dot"        data-index="1"></span>
+              <span class="carousel__dot"        data-index="2"></span>
+            </div>
+          </div>
+          <div class="card-tag">Serie Animalitos</div>
+        </div>
+        <div class="work-card__info">
+          <h3>Animalitos</h3>
+          <p>Borreguito y patito hechos a mano — suaves, amorosos y únicos.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__visual work-card__visual--especiales">
+          <div class="carousel" id="especialesCarousel">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="Assets/especiales/camaleon.jpg"      alt="Camaleón tejido"       /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/gorrodino.jpg"     alt="Gorro dino"            /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/gorropuerquito.jpg" alt="Gorro puerquito"     /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/koopa.jpg"         alt="Koopa tejido"          /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/kooper2.jpg"       alt="Koopa 2"               /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/mariobros.jpg"     alt="Mario Bros tejido"     /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/mujerunicornio.jpg" alt="Mujer unicornio"      /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/reydragon.jpg"     alt="Rey dragón"            /></div>
+              <div class="carousel__slide"><img src="Assets/especiales/unicornio.jpg"     alt="Unicornio tejido"      /></div>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel__progress-wrap">
+              <div class="carousel__progress-bar" id="especialesProgress"></div>
+            </div>
+          </div>
+          <div class="card-tag">Serie Especiales</div>
+        </div>
+        <div class="work-card__info">
+          <h3>Especiales</h3>
+          <p>Dragones, unicornios, Mario Bros y más — personajes únicos tejidos con mucho detalle.</p>
+        </div>
+      </article>
+
+      <article class="work-card work-card--tall">
+        <div class="work-card__visual work-card__visual--virgencitas">
+          <div class="carousel" id="virgencitasCarousel">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="Assets/Virgencitas/WhatsApp Image 2026-03-15 at 16.14.34.jpeg" alt="Virgencita 1" /></div>
+              <div class="carousel__slide"><img src="Assets/Virgencitas/WhatsApp Image 2026-03-15 at 16.14.54.jpeg" alt="Virgencita 2" /></div>
+              <div class="carousel__slide"><img src="Assets/Virgencitas/WhatsApp Image 2026-03-15 at 16.15.14.jpeg" alt="Virgencita 3" /></div>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel__dots">
+              <span class="carousel__dot active" data-index="0"></span>
+              <span class="carousel__dot"        data-index="1"></span>
+              <span class="carousel__dot"        data-index="2"></span>
+            </div>
+          </div>
+          <div class="card-tag">Serie Virgencitas</div>
+        </div>
+        <div class="work-card__info">
+          <h3>Virgencitas</h3>
+          <p>Piezas llenas de fe y devoción, tejidas a mano con amor y detalle.</p>
+        </div>
+      </article>
+
+      <article class="work-card">
+        <div class="work-card__visual work-card__visual--flores">
+          <div class="carousel" id="floresCarousel">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="Assets/flores/flores1.jpg" alt="Flores tejidas 1" /></div>
+              <div class="carousel__slide"><img src="Assets/flores/flores2.jpg" alt="Flores tejidas 2" /></div>
+              <div class="carousel__slide"><img src="Assets/flores/flores3.jpg" alt="Flores tejidas 3" /></div>
+              <div class="carousel__slide"><img src="Assets/flores/flores4.jpg" alt="Flores tejidas 4" /></div>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8592;</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8594;</button>
+            <div class="carousel__dots">
+              <span class="carousel__dot active" data-index="0"></span>
+              <span class="carousel__dot"        data-index="1"></span>
+              <span class="carousel__dot"        data-index="2"></span>
+              <span class="carousel__dot"        data-index="3"></span>
+            </div>
+          </div>
+          <div class="card-tag">Serie Flores</div>
+        </div>
+        <div class="work-card__info">
+          <h3>Flores Tejidas</h3>
+          <p>Bouquets eternos hechos a mano, puntada a puntada. Perfectos para regalar o decorar.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="process__inner">
+      <div class="process__text">
+        <p class="section-label">El oficio</p>
+        <h2 class="section-title">Cada punto<br/><em>cuenta una historia</em></h2>
+        <p>Trabajo con estambre de algodón y acrílico de alta calidad, elegido con cuidado. Cada amigurumi está relleno con fibra premium y terminado con ojitos de seguridad cosidos a mano — hecho para ser amado por años.</p>
+      </div>
+      <div class="process__steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h4>Boceto y Diseño</h4>
+            <p>Cada pieza empieza como un boceto, convirtiendo la personalidad en patrón.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h4>Gancho y Punto</h4>
+            <p>Tejido en redondo, vuelta a vuelta, con atención a cada detalle.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h4>Rellenar y Armar</h4>
+            <p>Relleno, cosido y con los toques finales que le dan su personalidad.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__num">04</div>
+          <div class="step__content">
+            <h4>Listo para ser amado</h4>
+            <p>Envuelto y enviado a su nuevo hogar con una nota escrita a mano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <div class="about__portrait">
+        <div class="portrait-frame">
+          <img src="Assets/CaroFoto.jpg" alt="Carolina Quijada" class="portrait-photo" />
+        </div>
+        <div class="about__badge">
+          <span class="badge-script">hecho a mano</span>
+          <span class="badge-sub">con amor</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section-label">Sobre mí</p>
+        <h2 class="section-title">Hola, soy<br/><em>Carolina</em></h2>
+        <p class="about__lead">Soy artesana, soñadora y fanática del estambre, radicada en Chile. El amigurumi llegó a mí una tarde tranquila y ya no me soltó.</p>
+        <p>Lo que comenzó como pasatiempo se convirtió rápidamente en una forma de volcar cariño en algo tangible — algo que la gente puede abrazar, regalar y atesorar. Creo que las cosas hechas a mano tienen una calidez que los objetos fabricados nunca logran del todo.</p>
+        <p>Cada pieza que creo es única. Aunque repita el mismo diseño, el estambre se comporta diferente, el relleno queda a su manera — y esa pequeña imperfección es la que lo hace real.</p>
+        <div class="about__facts">
+          <div class="fact">
+            <span class="fact__num">200+</span>
+            <span class="fact__label">Amigurumis creados</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num">3 años</span>
+            <span class="fact__label">Tejiendo</span>
+          </div>
+          <div class="fact">
+            <span class="fact__num">∞</span>
+            <span class="fact__label">Amor por punto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__left">
+        <p class="section-label">Saluda</p>
+        <h2 class="section-title">Hagamos<br/><em>algo juntos</em></h2>
+        <p>Ya sea que quieras un pedido especial, tengas una pregunta sobre mi trabajo, o simplemente quieras platicar de estambre — me encantaría saber de ti.</p>
+        <div class="contact__details">
+          <a href="mailto:carolina@example.com" class="contact__link">
+            <span class="contact__icon">✉</span>
+            carolina@example.com
+          </a>
+          <a href="https://instagram.com" class="contact__link" target="_blank">
+            <span class="contact__icon">◈</span>
+            @carolinaquijada
+          </a>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Tu nombre</label>
+          <input type="text" id="name" name="name" placeholder="Ana García" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="ana@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Cuéntame qué tienes en mente..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <span class="nav__logo-cq">CQ</span>
+        <span class="footer__tagline">Hecho con estambre y corazón</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="#work">Trabajo</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <p class="footer__copy">© 2026 Carolina Quijada. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
